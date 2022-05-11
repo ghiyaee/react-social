@@ -44,3 +44,7 @@ outline: none;
     object-fit: cover;
     margin-right: 10px;
 }
+.shareOptionText{
+    font-style: 14px;
+    font-weight: 500;
+}
