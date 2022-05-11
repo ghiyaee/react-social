@@ -3,14 +3,14 @@
     height:100vh;
     overflow-y: scroll;
 }
-.sidebar::-webkit-scrollbar{  
+::-webkit-scrollbar{  
     width: 5px;
 }
-.sidebar::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{
     background-color: rgb(210, 217, 226);
 }
-.sidebar::-webkit-scrollbar-thumb{
- background-color: rgb(132, 134, 138);
+::-webkit-scrollbar-thumb{
+ background-color: rgb(161, 162, 165);
 }
 
 .sidebarWrapper{
