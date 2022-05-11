@@ -1,17 +1,18 @@
 .sidebar{
     flex: 3;
-    height:calc(100vh-50px) ;
+    height:100vh;
     overflow-y: scroll;
 }
-/* ::-webkit-scrollbar{
+.sidebar::-webkit-scrollbar{  
     width: 5px;
-} */
-::-webkit-scrollbar-track{
-    background-color: rgb(171, 177, 182);
 }
-::-webkit-slider-thumb{
-    background-color: lightslategray;
+.sidebar::-webkit-scrollbar-track{
+    background-color: rgb(210, 217, 226);
 }
+.sidebar::-webkit-scrollbar-thumb{
+ background-color: rgb(132, 134, 138);
+}
+
 .sidebarWrapper{
     padding: 20px;
 }

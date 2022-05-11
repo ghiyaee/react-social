@@ -12,7 +12,7 @@ function Home() {
         <Feed />
         <Rightbar/>
       </div>
-      </>
+   </>
   )
 }
 
