@@ -3,7 +3,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import { Chat } from "@mui/icons-material";
 export default function Topbar() {
   return (
     <div className="topbarContainer">
@@ -42,7 +41,7 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-        
+
         <img src="/assets/person/img1.jpg" alt="" className="topbarImg" />
       </div>
     </div>
