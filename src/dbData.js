@@ -55,5 +55,66 @@ export const gift = [
    'assets/gift/hbd.jpg'
 ];
 export const share = [
-      'assets/gift/postImg.jpg'
-]
+    'assets/gift/postImg.jpg'
+];
+export const posts = [
+    {
+        id: 1,
+        photo: 'assets/post/postImg1.jpg',
+        date: "5 mins age",
+        userId: 1,
+        like: 15,
+        comment: 15
+    },
+    {
+        id: 2,
+        desc: 'very good',
+        photo: 'assets/post/postImg2.jpg',
+        date: "15 mins age",
+        userId: 2,
+        like: 5,
+        comment: 10
+    },
+    {
+        id: 3,
+        photo: 'assets/post/postImg3.jpg',
+        date: "25 mins age",
+        userId: 3,
+        like: 25,
+        comment: 4
+    },
+    {
+        id: 4,
+        photo: 'assets/post/postImg4.jpg',
+        date: "35 mins age",
+        userId: 4,
+        like: 3,
+        comment: 3
+    },
+    {
+        id:5,
+        photo: 'assets/post/postImg5.jpg',
+        date: "45 mins age",
+        userId: 5,
+        like: 2,
+        comment: 8
+    },
+    {
+        id: 6,
+        photo: 'assets/post/postImg6.jpg',
+        date: "55 mins age",
+        userId:6,
+        like:1,
+        comment: 1
+    },
+    {
+        id: 7,
+        desc: 'very good',
+        photo: 'assets/post/postImg7.jpg',
+        date: "65 mins age",
+        userId: 7,
+        like: 7,
+        comment: 5
+    },
+    
+];

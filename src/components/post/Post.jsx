@@ -3,7 +3,8 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-export default function Post() {
+export default function Post({ post }) {
+  console.log('post');
   return (
     <div className="post">
       <div className="postWrapper">
@@ -15,24 +16,24 @@ export default function Post() {
               className="postProfileImg"
             />
             <span className="postUsername">farnoosh</span>
-            <span className="postDate">5 mins age</span>
+            <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
             <MoreVertIcon />
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">Hey! Its my first post!</span>
-          <img src="/assets/person/postImg.jpg" alt="" className="postImg" />
+          <span className="postText">{post?.desc }</span>
+          <img src={post.photo} alt="" className="postImg" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <ThumbUpIcon className="likeIcon" />
             <FavoriteIcon className="likeIcon" htmlColor="red" />
-             <span className="postLikeConter">32 people like it</span>
+            <span className="postLikeConter">{`${post.like} people like it`}</span>
           </div>
           <div className="postBottomRight">
-               <span className="postCommentText">9 comments</span>
+            <span className="postCommentText">{`${post.comment} comments`}</span>
           </div>
         </div>
       </div>
