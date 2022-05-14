@@ -2,19 +2,19 @@ import Feed from "../../components/feed/Feed"
 import Rightbar from "../../components/rightbar/Rightbar"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Topbar from "../../components/topbar/Topbar"
-import { Users ,gift,share} from "../../dbData";
+import { Users ,gift} from "../../dbData";
 import "./home.css"
 function Home() {
   return (
     <>
-      <Topbar users={Users}/>
+      <Topbar users={Users} />
       <div className="homeContainer">
-        <Sidebar users={Users }/>
-        <Feed  />
-        <Rightbar users={Users} gift={gift} />
+          <Sidebar users={Users} />
+          <Feed users={Users} />
+          <Rightbar users={Users} gift={gift} />
       </div>
-   </>
-  )
+    </>
+  );
 }
 
 export default Home

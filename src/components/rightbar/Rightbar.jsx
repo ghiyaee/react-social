@@ -2,20 +2,17 @@ import "./rightbar.css"
 
 export default function Rightbar({ users ,gift}) {
   const renderUsers = users.map(u => {
+
     return (
-      <>
-        <li className="rightbarFriend" key={u.id}>
-          <div className="rightbarProfileImgContainer">
-            <img
-              src={u.profilePic}
-              alt=""
-              className="rightbarProfileImg"
-            />
-            <span className="rightbarOnline"></span>
-          </div>
-          <span className="rightbarUsername">{u.username }</span>
-        </li>
-      </>
+      <div key={u.id}>
+          <li className="rightbarFriend" >
+            <div className="rightbarProfileImgContainer">
+              <img src={u.profilePic} alt="" className="rightbarProfileImg" />
+              <span className="rightbarOnline"></span>
+            </div>
+            <span className="rightbarUsername">{u.username}</span>
+          </li>
+      </div>
     );
   })
 

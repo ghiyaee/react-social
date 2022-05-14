@@ -9,18 +9,14 @@ import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import EventIcon from "@mui/icons-material/Event";
 import SchoolIcon from "@mui/icons-material/School";
 export default function Sidebar({ users }) {
-  const renderUsers = users.map(u => {
+  const renderUsers = users.map(u =>  {
     return (
-      <>
+      <div key={u.id}>
         <li className="sidebarFriend">
-          <img
-            className="sidebarFriendImg"
-            src={u.profilePic}
-            alt=""
-          />
-          <span className="sidebarFriendName">{u.username }</span>
+          <img className="sidebarFriendImg" src={u.profilePic} alt="" />
+          <span className="sidebarFriendName">{u.username}</span>
         </li>
-      </>
+      </div>
     );
   })
   return (
@@ -68,7 +64,7 @@ export default function Sidebar({ users }) {
           <button className="sidebarButton">Show More</button>
           <hr className="sidebarHr" />
           <ul className="sidebarFriendList">
-          {renderUsers}
+           {renderUsers}
           </ul>
         </div>
       </div>
