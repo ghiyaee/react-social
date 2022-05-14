@@ -2,20 +2,22 @@ import "./post.css"
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-
+import { Users } from "../../dbData";
 export default function Post({ post }) {
-  console.log('post');
+
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src="/assets/person/img1.jpg"
+              src={Users.filter((user) => user.id === post?.userId)[0].profilePic}
               alt=""
               className="postProfileImg"
             />
-            <span className="postUsername">farnoosh</span>
+            <span className="postUsername">
+              {Users.filter((user) => user.id === post?.userId)[0].username}
+            </span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
@@ -23,7 +25,7 @@ export default function Post({ post }) {
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">{post?.desc }</span>
+          <span className="postText">{post?.desc}</span>
           <img src={post.photo} alt="" className="postImg" />
         </div>
         <div className="postBottom">
