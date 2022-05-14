@@ -2,7 +2,7 @@ import Feed from "../../components/feed/Feed"
 import Rightbar from "../../components/rightbar/Rightbar"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Topbar from "../../components/topbar/Topbar"
-import { Users ,gift} from "../../dbData";
+import { Users ,gift,share} from "../../dbData";
 import "./home.css"
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
       <Topbar users={Users}/>
       <div className="homeContainer">
         <Sidebar users={Users }/>
-        <Feed />
+        <Feed share={share} users={Users} />
         <Rightbar users={Users} gift={gift} />
       </div>
    </>

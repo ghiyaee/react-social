@@ -3,14 +3,14 @@ import PermMediaIcon from "@mui/icons-material/PermMedia";
 import LabelIcon from "@mui/icons-material/Label";
 import RoomIcon from "@mui/icons-material/Room";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
-export default function Share() {
+export default function Share({share,users}) {
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
           <img
             className="shareProfileImg"
-            src="/assets/person/img1.jpg"
+            src={users[0].profilePic}
             alt=""
           />
           <input placeholder="What's in yuor" className="shareInpu" />

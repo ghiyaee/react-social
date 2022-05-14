@@ -54,3 +54,6 @@ export const gift = [
    'assets/gift/gift1.png',
    'assets/gift/hbd.jpg'
 ];
+export const share = [
+      'assets/gift/postImg.jpg'
+]
