@@ -2,15 +2,16 @@ import Feed from "../../components/feed/Feed"
 import Rightbar from "../../components/rightbar/Rightbar"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Topbar from "../../components/topbar/Topbar"
+import { Users ,gift} from "../../dbData";
 import "./home.css"
 function Home() {
   return (
     <>
-      <Topbar />
+      <Topbar users={Users}/>
       <div className="homeContainer">
-        <Sidebar />
+        <Sidebar users={Users }/>
         <Feed />
-        <Rightbar/>
+        <Rightbar users={Users} gift={gift} />
       </div>
    </>
   )

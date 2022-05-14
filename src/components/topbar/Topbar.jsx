@@ -3,7 +3,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-export default function Topbar() {
+
+export default function Topbar({users}) {
   return (
     <div className="topbarContainer">
 
@@ -42,7 +43,7 @@ export default function Topbar() {
           </div>
         </div>
 
-        <img src="/assets/person/img1.jpg" alt="" className="topbarImg" />
+        <img src={users[0].profilePic} alt="" className="topbarImg" />
       </div>
     </div>
   );
