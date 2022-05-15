@@ -6,7 +6,8 @@ import { Users } from "../../dbData";
 import { useState } from "react";
 export default function Post({ post }) {
   const [like, setLike] = useState(post.like)
-  const [isLike,setIsLike]=useState(true)
+  const [isLike, setIsLike] = useState(true)
+  const [favor,setFavor]=useState('like')
   const likeHandel = () => {
     setLike(isLike ? like + 1 : like - 1)
     setIsLike(!isLike)
@@ -17,7 +18,9 @@ export default function Post({ post }) {
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src={Users.filter((user) => user.id === post?.userId)[0].profilePic}
+              src={
+                Users.filter((user) => user.id === post?.userId)[0].profilePic
+              }
               alt=""
               className="postProfileImg"
             />
@@ -36,7 +39,7 @@ export default function Post({ post }) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <ThumbUpIcon className="likeIcon" onClick={likeHandel} />
+            <ThumbUpIcon className="likeIcon color" onClick={likeHandel} />
             <FavoriteIcon className="likeIcon" htmlColor="red" />
             <span className="postLikeConter">{`${like} people like it`}</span>
           </div>
